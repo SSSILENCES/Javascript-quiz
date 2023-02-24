@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Javascript Quiz </h1>
+        <div>
+            <button id="start-button"> Start Quiz</button>
+        </div>
+    </header>
+
+    <section>
+        <h2 id="countdown"> </h2>
+        <h2 id="score"> 0 Score</h2>
+        <article></article>
+        <form id="quiz-content">
+            <!-- question 1 content -->
+            <div class="oneforall" id="onediv">
+                <p>1.Which of the following is not a JavaScript data type?</p>
+                <input class="wrong1" id="wrong1_0" type="radio" name="q1" value="a">Number<br><span class="incorrect"
+                    id="incorrect1.1">incorrect!</span>
+                <input id="one" type="radio" name="q" value="b"> Character <span class="correct"
+                    id="hidden1">Correct!</span>
+                <br>
+                <input class="wrong1" id="wrong1_1" type="radio" name="q1" value="c"> String <span class="incorrect"
+                    id="incorrect1.2">incorrect!</span><br>
+                <input class="wrong1" id="wrong1_2" type="radio" name="q1" value="d"> Boolean <span class="incorrect"
+                    id="incorrect1.3">incorrect!</span><br>
+                <button class="next" id="next1"> Next Question!</button>
+            </div>
+            <br>
+            <!-- question 2 content -->
+            <div class="oneforall" id="twodiv">
+                <p>2. Which keyword is used to define a function in JavaScript?</p>
+                <input id="wrong2_0" class="wrong2" type="radio" name="q2" value="a"> def<span
+                    class="incorrect" id="incorrect2.1">incorrect!</span><br>
+                <input id="wrong2_1" class="wrong2" type="radio" name="q2" value="b"> func <span class="incorrect"
+                    id="incorrect2.2">incorrect!</span><br>
+                <input id="two" type="radio" name="q2" value="c"> function<span class="correct"
+                    id="hidden2">Correct!</span><br>
+                <input id="wrong2_2" class="wrong2" type="radio" name="q2" value="d"> declare <span class="incorrect"
+                    id="incorrect2.3">incorrect!</span><br>
+                <button class="next" id="next2"> Next Question!</button>
+            </div>
+            <br>
+            <!-- question 3 content -->
+            <div class="oneforall" id="threediv">
+                <p>3. What is the output of the following code snippet: console.log(5 + "5");?</p>
+                <input id="wrong3_0" class="wrong3" type="radio" name="q3" value="a"> "5 + 5" <span class="incorrect"
+                    id="incorrect3.1">incorrect!</span><br>
+                <input id="wrong3_1" class="wrong3" type="radio" name="q3" value="b"> 10 <span class="incorrect"
+                    id="incorrect3.2">incorrect!</span><br>
+                <input id="three" type="radio" name="q3" value="c"> 55<span class="correct"
+                    id="hidden3">Correct!</span><br>
+                <input id="wrong3_2" class="wrong3" type="radio" name="q3" value="d"> Error <span
+                    class="incorrect" id="incorrect3.3">incorrect!</span><br>
+                <button class="next" id="next3"> Next Question!</button>
+            </div>
+            <br>
+            <!-- question 4 content -->
+            <div class="oneforall" id="fourdiv">
+                <p>4. Which operator is used to concatenate strings in JavaScript?</p>
+                <input id="wrong4_0" class="wrong4" type="radio" name="q4" value="a"> - <span class="incorrect"
+                    id="incorrect4.1">incorrect!</span><br>
+                <input id="wrong4_1" class="wrong4" type="radio" name="q4" value="b"> * <span class="incorrect"
+                    id="incorrect4.2">incorrect!</span><br>
+                <input id="four" type="radio" name="q4" value="c"> + <span class="correct"
+                    id="hidden4">Correct!</span><br>
+                <input id="wrong4_2" class="wrong4" type="radio" name="q4" value="d"> / <span class="incorrect"
+                    id="incorrect4.3">incorrect!</span><br>
+                <button class="next" id="next4"> Next Question!</button>
+            </div>
+            <br>
+            <!-- question 5 content -->
+            <div class="oneforall" id="fivediv">
+                <p>5. Which of the following is not a JavaScript looping structure?</p>
+                <input id='five' type="radio" name="q5" value="a"> if-else <span class="correct"
+                    id="hidden5">Correct!</span><br>
+                <input id="wrong5_0" class="wrong5" type="radio" name="q5" value="b">for <span class="incorrect"
+                    id="incorrect5.1">incorrect!</span><br>
+                <input id="wrong5_1" class="wrong5" type="radio" name="q5" value="c"> while <span
+                    class="incorrect" id="incorrect5.2">incorrect!</span><br>
+                <input id="wrong5_2" class="wrong5" type="radio" name="q5" value="d"> do-while <span
+                    class="incorrect" id="incorrect5.3">incorrect!</span><br>
+                <button class="next" id="next5"> Next Question!</button>
+            </div>
+            <!-- question 6 content -->
+            <div class="oneforall" id="sixdiv">
+                <p>6. What is the output of the following code snippet: console.log(10 === "10");?</p>
+                <input id="wrong6_0" class="wrong6" type="radio" name="q5" value="a"> true <span
+                    class="incorrect" id="incorrect6.1">incorrect!</span><br>
+                <input id="wrong6_1" class="wrong6" type="radio" name="q5" value="b"> undefined <span class="incorrect"
+                    id="incorrect6.2">incorrect!</span><br>
+                <input id="wrong6_2" class="wrong6" type="radio" name="q5" value="c"> Error <span
+                    class="incorrect" id="incorrect6.3">incorrect!</span><br>
+                <input id='six' type="radio" name="q5" value="d"> false <span class="correct"
+                    id="hidden6">Correct!</span><br><br>
+                <button class="next" id="next6"> Next Question!</button>
+            </div>
+            <!-- question 7 content -->
+            <div class="oneforall" id="sevendiv">
+                <p>7.Which function is used to convert a string to a number in JavaScript?</p>
+                <input id="wrong7_0" class="wrong7" type="radio" name="q5" value="a"> toNumber() <span
+                    class="incorrect" id="incorrect7.1">incorrect!</span><br>
+                <input id="wrong7_1" class="wrong7" type="radio" name="q5" value="b"> convertNumber() <span class="incorrect"
+                    id="incorrect7.2">incorrect!</span><br>
+                <input id="wrong7_2" class="wrong7" type="radio" name="q5" value="c"> NumberFromString()  <span
+                    class="incorrect" id="incorrect7.3">incorrect!</span><br>
+                <input id='seven' type="radio" name="q5" value="d"> parselnt()<span class="correct"
+                    id="hidden7">Correct!</span>
+
+
+                <br><br> <br> <button class="next" id="next7"> Next Question!</button>
+            </div>
+            <!-- question 8 content -->
+            <div class="oneforall" id="eightdiv">
+                <p>8. Which statement is used to jump out of a loop in JavaScript?</p>
+                <input id="wrong8_0" class="wrong8" type="radio" name="q5" value="a"> continue <span
+                    class="incorrect" id="incorrect8.1">incorrect!</span><br>
+                <input id='eight' type="radio" name="q5" value="b"> break <span class="correct"
+                    id="hidden8">Correct!</span>
+                <br>
+                <input id="wrong8_1" class="wrong8" type="radio" name="q5" value="c"> return <span
+                    class="incorrect" id="incorrect8.2">incorrect!</span><br>
+                <input id="wrong8_2" class="wrong8" type="radio" name="q5" value="d"> exit<span
+                    class="incorrect" id="incorrect8.3">incorrect!</span><br>
+                <button class="next" id="next8"> Next Question!</button>
+            </div>
+            <!-- question 9 content -->
+            <div class="oneforall" id="ninediv">
+                <p>9. What is the output of the following code snippet: console.log(typeof true);</p>
+                <input id="wrong9_0" class="wrong9" type="radio" name="q5" value="a"> object <span
+                    class="incorrect" id="incorrect9.1">incorrect!</span><br>
+                <input id="wrong9_1" class="wrong9" type="radio" name="q5" value="b"> string <span class="incorrect"
+                    id="incorrect9.2">incorrect!</span><br>
+                <input id="wrong9_2" class="wrong9" type="radio" name="q5" value="c"> number <span
+                    class="incorrect" id="incorrect9.3">incorrect!</span><br>
+                <input id='nine' type="radio" name="q5" value="d"> boolean <span class="correct"
+                    id="hidden9">Correct!</span>
+
+                <br><br><br> <button class="next" id="next9"> Next Question!</button>
+            </div>
+            <!-- question 10 content -->
+            <div class="oneforall" id="tendiv">
+                <p>10. Which mountain range spans the longest distance in the world?</p>
+                <input id="wrong10_0" class="wrong10" type="radio" name="q5" value="a"> add()<span
+                    class="incorrect" id="incorrect10.1">incorrect!</span><br>
+                <input id="wrong10_1" class="wrong10" type="radio" name="q5" value="b"> append() <span class="incorrect"
+                    id="incorrect10.2">incorrect!</span><br>
+                <input id="wrong10_2" class="wrong10" type="radio" name="q5" value="c"> extend()<span
+                    class="incorrect" id="incorrect10.3">incorrect!</span><br>
+                <input id='ten' type="radio" name="q5" value="d"> push() <span class="correct"
+                    id="hidden10">Correct!</span><br><br><br>
+                <button class="next" id="next10"> Submit!</button>
+            </div>
+
+            <br>
+
+            <input id="submit" type="button" value="Submit" onclick="checkAnswers()">
+        </form>
+    </section>
+<section>
+<!-- quiz over message content -->
+    <article id="finalmessagge">
+        <h1> Quiz Over</h1>
+        <button id="restart">Click Here To Restart</button>
+    </article>
+
+<!-- name collector form  content-->
+    <form id="finalform">
+        <h2 id="save"> Save Your Progress ❤️</h2>
+        <label> Name </label>
+        <input type="text" id="input1" placeholder="First Name">
+        <input type="text" id="input2" placeholder="Last Name">
+        <button id="submit-btn">Submit</button>
+
+    </form>
+<!-- name collector form content for quiz over!-->
+    <form id="finalform2">
+        <h2 id="save"> Quiz Over (Save Your Progress) </h2>
+        <label> Name </label>
+        <input type="text" id="input1" placeholder="First Name">
+        <input type="text" id="input2" placeholder="Last Name">
+        <button id="submit-btn">Submit</button>
+
+    </form>
+
+
+ <!-- leaderbord content -->
+
+    <section id=leaderboard>
+        <h2 id="leaderboardh2"> LeaderBoard</h2>
+        <ul id="list"> </ul>
+    </section>
+
+    <script src="./assets/script.js"></script>
+</section>
+</body>
+
+</html>
