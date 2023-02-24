@@ -1,0 +1,182 @@
+
+/* title section */
+#title {
+    text-align: center;
+    margin-right: 20px;
+}
+/* Start Button Properties */
+#start-button{
+   margin-left: 845px;
+   position: absolute; top:150px;
+   width: 180px;
+   height: 100px;
+   border-radius: 100px;
+   background-color: white;
+   font-size: 20px;
+
+}
+/* articles section */
+#onediv {
+    display:none
+
+}
+#twodiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#threediv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#fourdiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#fivediv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#sixdiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#sevendiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#eightdiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#ninediv {
+    display:none;
+    position: absolute; top: 100px;
+}
+#tendiv {
+    display:none;
+    position: absolute; top: 100px;
+}
+
+
+/* correct paragraoh attributes */
+.correct {
+    color:rgb(27, 224, 80);
+display: none;
+}
+/* incorrect paragraoh attributes */
+.incorrect {
+    color:red;
+    display: none;
+}
+/* quiz over message attributes */
+#finalmessagge{
+    text-align: center;
+    border: 2px solid purple;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 830px;
+    display: none;
+}
+
+/* Timer position  attributes */
+#countdown {
+    position: absolute; top: 50px; right: 70px;
+
+ 
+}
+/* next question button attributes! */
+ #next1 {
+    margin-left: 300px;
+    display: none;
+}
+#next2 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next3 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next4 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next5 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next6 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next7 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next8 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next9 {
+    margin-left: 300px;
+    display: none;
+}
+
+#next10 {
+    margin-left: 300px;
+    display: none;
+}
+
+
+/* score points attribute */
+#score {
+    display:none;
+}
+/* submit attributes */
+#submit {
+    display: none;
+}
+/* leaderboard attributes */
+#leaderboard {
+ position:absolute; right: 750px; top:380px;
+ margin-right: 20px;
+ border: 2px solid black;
+ height: 500px;
+ width: 400px;
+
+}
+/* leaderboard header attributes */
+#leaderboardh2 {
+    margin-left:125px;
+    text-decoration: underline;
+}
+/* name collector form attributes */
+#finalform {
+    
+    margin-left: 755px;
+    display: none;
+}
+/* name collector header form attributes */
+#save {
+    margin-left: 100px;
+}
+
+/* name collector form attributes  for quiz over section!*/
+#finalform2 {
+    
+    margin-left: 755px;
+    display: none;
+}
+/* name collector form attributes h2 for quiz over section */
+#finalform2 h2 {
+    
+    margin-left: 60px;
+  
+}
